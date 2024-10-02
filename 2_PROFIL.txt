@@ -1,0 +1,8 @@
+﻿CO_TO_JEST; xxx
+TYP_KARTY; katalogowa/ rodziny
+DATA_TYP;kod,rodzina,kodbarwy,ilosc,psu,ppsu,sterowanie,klasa,kolor,IP,IK,vin,hz,vs,zmienne,p,flux,wyd,pled,fluxled,wydled,cri,cct,barwa,masa,montaz,temperatury,dyfuzor,wymiary,dopisek,foto,rys,rozsyl,uwagi,END
+ZASTOSOWANIE; xxx @ xxx @ xxx @ xxx @END
+CECHY;xxx @ xxx @ xxx @ xxx @ xxx @END
+PARAMERTY;-10@0.45@0.80@0.80@0.4@0.3 @END
+FOLDERY;Pliki źródłowe,RysTech,Rozsyl,Akcesoria,Inne, Foto,Starsze dane,Wyniki,END
+DATA_KARTY;3 styczeń 2023

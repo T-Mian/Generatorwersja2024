@@ -1,0 +1,64 @@
+﻿INSTRYKCJIA OBSŁUGI
+
+1) Nalezy skopiować Aktualny folder
+
+2) Zmienić nazwę folderu na nazwę rodziny (używamy dużych liter)
+
+
+3) Otworzyć plik "PROFIL.txt"
+
+   	3.b) Pod zadnym pozorem NIE ZMIENIAĆ napisów włacznie do średnika (";")
+
+	program bowiem ma określone od którego znaku są istotne dane
+
+4) Opis: 
+	CO_TO_JEST;	=> Tutaj wpisz nagłówek dla produktu
+
+	TYP_KARTY;	=> Tutaj skasować niepotrzebną opcję 
+
+	DATA_TYP;	=> Tutaj znajduje sie bardzo istotny element, który umozliwia generownie bazy csv oraz łaczy ję z plikiem LEX,("personalizacja" danych)
+
+	ZASTOSOWANIE;	=> Tutaj wpisac zastosowania dla produktu, każdy nowy Element kończy sie znakiem "@" , na samym końcu znajduje sie "@END"
+
+	CECHY;		=> Tutaj wpisac cechy produktu,każdy nowy Element kończy sie znakiem "@" , na samym końcu znajduje sie "@END"
+
+	PARAMERTY;	=> Aktualnie nie aktywne (każdy nowy Element kończy sie znakiem "@" , na samym końcu znajduje sie "@END"
+
+	FOLDERY;	=> Tutaj znajduja się nazwy dla nowych folderów , które tworzy program, na koncu znajdujwe sie END
+
+	DATA_KARTY;	=> Tutaj znajduje się data dla karty (na wypadek gdyby byłaby wymagana inna data)
+
+5) Plik PROFIL wymaga kodowania UTF-8 
+
+	5.b) Aby zmienić kodowanie wystarczy wybrać opcjie zapisz jako , ponizej powinna być pocja z zmiana kodowania 
+
+					(standardowo jest to kodowanie ANSI)
+6) Po uzupełnieniu danych zapisać plik
+
+7) Dwukrotnie kliknąć skrypt o nazwie Start_versja_X (X jest zmienne, w przypadku kilku plików tego rodzaju , wybieramy największa wartość X)
+
+8) Skrypt wgeneruje FOldery (opisane w FOLGERY;), Plik CSV z pozycjami opisanymi w DATA_TYP,
+
+	oraz LATEX z połaczeniem do pliku csv plus z CO_TO_JEST , TYP_KARTY,DATA_TYP,ZASTOSOWANIE,CECHY,DATA_KARTY
+
+9) Uzupełnić csv
+
+10) Zmodyfikowac ( gdy potrzebne ) plik Latex
+
+	10.b) Przekazujemy dane do poszczególnych folderów
+
+11) Uruchomić Konwersjie na plik PDF (plik masowy)
+
+	11.b)wygenerowane zostaną pliki pomocnicze programu Latex
+
+12) Jezeli akceptujemy plik PDF => następny punkt, jeśli nie=> powtarzamy punkty "według potrzeby" od 9 do 11
+
+13) Podwujnie klikamy skrypt o nazwie "Podział_versja_X" ( wibieramy najwyższą wartość dla X)
+
+14) Powstanie polder główny składający sie z" NAZWY_RODZINY_DATY_Wyniki"
+
+	14.b)Wewnątrz będzie kolejny folder z aktualną wersją wygenerowanych kart
+
+	14.c)Każde uaktywnienie skryptu "Podział_versja_X" generuje nowa wersje dla kart
+
+	14.d) Wygenerowany zostaje takze "RAPORT" oraz plik "RODZINA-kody a href"
